@@ -34,6 +34,6 @@ public class Cidade {
     }
     @Override //annotations
     public String toString() {
-        return nome +"/"+uf;
+        return id+"-"+nome +"/"+uf;
     }
 }

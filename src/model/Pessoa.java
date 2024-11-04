@@ -3,20 +3,20 @@ public class Pessoa {
     private int id;
     private String nome;
     private String email;
-    private Cliente cliente;
+    private Cidade cidade;
     
     public Pessoa() {
         id=0;
         nome = new String();
         email = new String();
-        cliente = new Cliente();
+        cidade = new Cidade();
     }
 
-    public Pessoa(int id, String nome, String email, Cliente cliente) {
+    public Pessoa(int id, String nome, String email, Cidade cidade) {
         this.id = id;
         this.nome = nome;
         this.email = email;
-        this.cliente = cliente;
+        this.cidade = cidade;
     }
 
     public int getId() {
@@ -43,12 +43,12 @@ public class Pessoa {
         this.email = email;
     }
 
-    public Cliente getCliente() {
-        return cliente;
+    public Cidade getCidade() {
+        return cidade;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
+    public void setCidade(Cidade cidade) {
+        this.cidade = cidade;
     }
     
 }
